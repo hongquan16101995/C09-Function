@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="result"></h1>
+<h1 id="result1"></h1>
+<script>
+  //cú pháp khởi tạo hàm
+  //hàm không có tham số, không có giá trị trả về
+  function display() {
+    document.getElementById("result").innerHTML = "Hello C09K1"
+  }
+  display()
+
+  //hàm có tham số, không có giá trị trả về
+  let string = "Hello C09K2"
+  function display1(string) {
+    document.getElementById("result1").innerHTML = string
+  }
+  display1(string)
+
+  //hàm không có tham số, có giá trị trả về
+  function display2() {
+    let string = "Hello C09K"
+    return string
+  }
+  console.log(display2())
+
+  //hàm có tham số và có giá trị trả về
+  let number = 10
+  function display3(num) {
+    let result = num*2
+    return result
+  }
+  console.log(display3(number))
+</script>
+</body>
+</html>
